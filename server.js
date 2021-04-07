@@ -18,7 +18,7 @@ let projectData = {
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 // Initialize the main project folder
-app.use(express.static('website'));
+app.use(express.static('Website'));
 // Cors for cross origin allowance
 app.use(cors());
 /* Middleware*/
