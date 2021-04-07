@@ -28,10 +28,6 @@ app.listen(process.env.PORT, function () {
   console.log('CORS-enabled web server listening on port http://localhost:' + process.env.PORT);
 });
 
-app.get('/', function (req, res) {
-  res.sendFile(__dirname + '/public/weather.html');
-});
-
 app.post('/userEntry', function (req, res) {
   projectData = req.body;
   res.send(projectData);
