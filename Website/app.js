@@ -4,11 +4,11 @@ const generate_btn = document.querySelector("#generate");
 
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
+let newDate = d.getMonth()+1+'.'+ d.getDate()+'.'+ d.getFullYear();
 
 // Personal API Key for OpenWeatherMap API
 
-const apiKey = '0b8fc555226b242d10b77d10d2d8d8c4';
+const apiKey = '0b8fc555226b242d10b77d10d2d8d8c4=metric';
 
 // Event listener to add function to existing HTML DOM element
 document.addEventListener("DOMContentLoaded", function(){
